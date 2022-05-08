@@ -45,19 +45,19 @@ function ContactForm() {
 			{submitted && <Alert variant="success">Success</Alert>}
 			<Form onSubmit={handleSubmit(onSubmit)}>
 				<Form.Group>
-					<Col sm={4} md={6} className="p-0">
+					<Col sm={8} md={6} className="p-0">
 						<Form.Control type="text" placeholder="First Name" {...register("firstName")} className="my-2" />
 						{errors.firstName && <FormError>{errors.firstName.message}</FormError>}
 					</Col>
-					<Col sm={4} md={6} className="p-0">
+					<Col sm={8} md={6} className="p-0">
 						<Form.Control type="text" placeholder="Last Name" {...register("lastName")} className="my-2" />
 						{errors.lastName && <FormError>{errors.lastName.message}</FormError>}
 					</Col>
-					<Col sm={4} md={6} className="p-0">
+					<Col sm={8} md={6} className="p-0">
 						<Form.Control type="text" placeholder="Email" {...register("email")} className="my-2" />
 						{errors.email && <FormError>{errors.email.message}</FormError>}
 					</Col>
-					<Col sm={4} md={6} className="p-0">
+					<Col sm={8} md={6} className="p-0">
 						<Form.Select aria-label="Default select example" {...register("select")}>
 							<option>Subject</option>
 							<option value="love">Send Love</option>
@@ -65,18 +65,7 @@ function ContactForm() {
 						</Form.Select>
 						{errors.select && <FormError>{errors.select.message}</FormError>}
 					</Col>
-					{/* <label>MUI Select</label>
-					<Controller
-					render={({ select }) => (
-						<Select {...select}>
-						<option value={10}>Send love</option>
-						<option value={20}>Send hate</option>
-						</Select>
-					)}
-					name="Select"
-					control={control}
-					/> */}
-					<Col sm={4} md={6} className="p-0">
+					<Col sm={8} md={6} className="p-0">
 						<Form.Control as ="textarea" type="text" placeholder="Write your message" {...register("message")} className="my-2 message" />
 						{errors.message && <FormError>{errors.message.message}</FormError>}
 					</Col>

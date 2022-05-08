@@ -2,7 +2,6 @@ import Heading from "../layout/Heading";
 import Container from "react-bootstrap/Container";
 import UniList from "./UniList";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export default function Home() {
     return (

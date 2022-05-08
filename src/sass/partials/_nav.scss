@@ -1,0 +1,32 @@
+a {
+    color: $colour-white;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: $colour-white;
+    text-decoration: underline;
+}
+.btn:hover, .btn:active {
+    color: $colour-white;
+    text-decoration: underline;
+    background-color: $colour-white;
+}
+.bg-dark {
+    background-color: $colour-primary;
+}
+nav {
+	padding: 15px;
+}
+
+.btn {
+	font-size: 1rem;
+	background-color: $colour-white;
+	border: none;
+	margin: 1rem 0 1rem 0;
+    padding: 0.5rem 2rem;
+    color: $colour-primary;
+
+    a {
+        color: $colour-primary !important;
+    }
+}

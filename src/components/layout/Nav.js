@@ -24,9 +24,6 @@ function CreateNav() {
                     <NavLink to="/" className="nav-link">
                         Home
                     </NavLink>
-                    <NavLink to="/detail/:id" className="nav-link">
-                        Detail
-                    </NavLink>
                     <NavLink to="/contact" className="nav-link">
                         Contact
                     </NavLink>

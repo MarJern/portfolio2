@@ -44,7 +44,7 @@ function UniList() {
 		<>
 			{unis.map(function (uni) {
                 const { id, name, price, rating} = uni;
-				return <UniItem key={id} name={name} price={price} rating={rating} />
+				return <UniItem key={id} id={id} name={name} price={price} rating={rating} />
 			})}
 		</>
 	);
